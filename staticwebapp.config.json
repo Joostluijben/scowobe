@@ -1,6 +1,10 @@
 {
     "routes": [
         {
+            "route": "/uitschrijven",
+            "rewrite": "/index.html"
+        },
+        {
             "route": "/",
             "redirect": "/uitschrijven",
             "statusCode": 301
