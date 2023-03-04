@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+            "route": "/",
+            "redirect": "/uitschrijven",
+            "statusCode": 301
+        }
+    ]
+}
