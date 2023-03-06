@@ -91,7 +91,9 @@
                                                 function capitalizeFirstLetter(string) {
                                                   return string.charAt(0).toUpperCase() + string.slice(1);
                                                 }
-                                                document.querySelector("#firstname").innerText = capitalizeFirstLetter(params.naam)</script>
+                                                let firstName = document.querySelector("#firstname");
+                                                params.naam === null ? firstName.innerText = "Jij" : firstName.innerText = capitalizeFirstLetter(params.naam)
+                                                </script>
                                             </td>
                                           </tr>
 
@@ -152,3 +154,7 @@
 </body>
 
 </html>
+
+<script>
+  let uitschrijfReacties = ["Eindelijk geen jantje beton meer", "We zijn er van af"]
+</script>
