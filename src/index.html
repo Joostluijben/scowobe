@@ -85,42 +85,16 @@
                                             </th>
                                             <td style="width:450px"><span id="firstname"></span>
                                               <script>
-                                              const params = new Proxy(new URLSearchParams(window.location.search), {
+                                                const params = new Proxy(new URLSearchParams(window.location.search), {
                                                   get: (searchParams, prop) => searchParams.get(prop),
                                                 });
-                                                document.querySelector("#firstname").innerText = params.naam</script>
+                                                function capitalizeFirstLetter(string) {
+                                                  return string.charAt(0).toUpperCase() + string.slice(1);
+                                                }
+                                                document.querySelector("#firstname").innerText = capitalizeFirstLetter(params.naam)</script>
                                             </td>
                                           </tr>
-                                          <tr>
-                                            <th style="width:150px">
-                                              Tussenvoegsel</th>
-                                            <td style="width:450px"></td>
-                                          </tr>
-                                          <tr>
-                                            <th style="width:150px">
-                                              Achternaam</th>
-                                            <td style="width:450px">
-                                              XXX</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="width:150px">
-                                              Onderdeel</th>
-                                            <td style="width:450px">
-                                              XXX
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <th style="width:150px">E-Mail
-                                            </th>
-                                            <td style="width:450px"><a href="mailto:xxx@xxx.com" target="_blank">XXX</a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <th style="width:150px">
-                                              Geboortedatum</th>
-                                            <td style="width:450px">
-                                              01-01-2001</td>
-                                          </tr>
+
                                           <tr>
                                             <th style="width:150px">Datum
                                               Einde Lidmaatschap</th>
@@ -129,7 +103,7 @@
                                           <tr>
                                             <th style="width:150px">
                                               Opmerkingen</th>
-                                            <td style="width:450px"></td>
+                                            <td style="width:450px">Eindelijk zijn we van je af</td>
                                           </tr>
                                         </tbody>
                                       </table>
