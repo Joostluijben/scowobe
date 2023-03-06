@@ -105,7 +105,11 @@
                                           <tr>
                                             <th style="width:150px">
                                               Opmerkingen</th>
-                                            <td style="width:450px">Eindelijk zijn we van je af</td>
+                                            <td style="width:450px"><span id="comment"></span></td>
+                                            <script>
+                                              let uitschrijfReacties = ["Gelukkig geen jantje beton meer", "Eindelijk zijn we van je af"]
+                                              document.querySelector('#comment').innerText = uitschrijfReacties[Math.floor(Math.random()*uitschrijfReacties.length)];
+                                            </script>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -154,7 +158,3 @@
 </body>
 
 </html>
-
-<script>
-  let uitschrijfReacties = ["Eindelijk geen jantje beton meer", "We zijn er van af"]
-</script>
