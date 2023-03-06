@@ -93,7 +93,7 @@
                                                 }
                                                 let firstName = document.querySelector("#firstname");
                                                 params.naam === null ? firstName.innerText = "Jij" : firstName.innerText = capitalizeFirstLetter(params.naam)
-                                                </script>
+                                              </script>
                                             </td>
                                           </tr>
 
@@ -107,8 +107,22 @@
                                               Opmerkingen</th>
                                             <td style="width:450px"><span id="comment"></span></td>
                                             <script>
-                                              let uitschrijfReacties = ["Gelukkig geen jantje beton meer", "Eindelijk zijn we van je af"]
-                                              document.querySelector('#comment').innerText = uitschrijfReacties[Math.floor(Math.random()*uitschrijfReacties.length)];
+                                              let uitschrijfReacties = [
+                                                "Je hebt onze routetechniek gevolgd, maar nu is het tijd om je eigen routetechniek te volgen.",
+                                                "We hebben ons best gedaan om je bij te brengen hoe je goede leiding kan zijn, iedereen te helpen waar je kan, maar sommigen zijn gewoon incapabel",
+                                                "Je hebt een nieuwe insigne verdiend: de 'Dankbaar-dat-je-weg-bent' insigne!",
+                                                "Bedankt voor het helpen bij het pionieren, maar helaas ben je zelf een zielige constructie.",
+                                                "Bedankt voor het kampvuur, maar het is tijd om de vlammen te doven en verder te gaan.",
+                                                "We zijn zo blij dat je weg bent, we zouden bijna een 'Opgeruimd-staat-netjes'-insigne willen uitgeven!",
+                                                "Je hebt geleerd touwen te knopen, maar het lijkt er meer op dat je je eigen leven in de knoop hebt gelegd.",
+                                                "Je hebt geleerd over routetechnieken, maar het lijkt erop dat je eigenlijk geen idee hebt waar je naartoe gaat.",
+                                                "Bedankt voor je bijdrage aan het kampvuur, maar het lijkt erop dat je meer geïnteresseerd bent in je eigen gezang dan in onze oren.",
+                                                "Als leiding moeten we ons houden aan de Scoutswet, maar het lijkt erop dat je het Baden Powell boekje niet hebt gelezen.",
+                                                "Je hebt niet je best gedaan om een goede leiding te zijn, dus we kunnen niet op je rekenen.",
+                                                "Had die deur in de bar nou maar dicht gedaan.",
+                                                "Nu ben je wel eindelijk van jantje beton af."
+                                              ]
+                                              document.querySelector('#comment').innerText = uitschrijfReacties[Math.floor(Math.random() * uitschrijfReacties.length)];
                                             </script>
                                           </tr>
                                         </tbody>
