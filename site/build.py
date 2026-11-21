@@ -4,8 +4,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / 'src'
 ORIGINAL = 'https://scowo.nl'
-LOGO = ORIGINAL + '/wp-content/uploads/2026/10/img_logo_white.png'
-POSTER = ORIGINAL + '/wp-content/uploads/2026/11/95588a45-574c-4adc-9eda-54df75aabee1-724x1024.jpeg'
+LOGO = '/assets/scowo-logo.png'
+POSTER = '/assets/goededoelenboom.webp'
 SIGNUP = 'https://docs.google.com/forms/d/e/1FAIpQLScB-N_XImGP6tSdF8jARrsekSU1u0nU3UhCjM9wiMmFgI1F8Q/viewform'
 CANCEL = 'https://docs.google.com/forms/d/e/1FAIpQLSdRNOW3m4IoMO_q9Bpl1NMPOkm_CcX3FyrHHo_nxwdiF6xMyQ/viewform'
 TOUR = 'https://drive.google.com/file/d/1OaUBG5zPIYkwe6sYZBt8Hb-l61ZpjBTZ/view'
@@ -215,7 +215,7 @@ def group_page():
         cards.append(f'<article class="group-card" id="{slug}"><p class="eyebrow">{age}</p><h2>{title}</h2><p>{text}</p>'
                      f'{f"<dl>{schedule}</dl>" if times else ""}</article>')
     return page('Speltakken', 'Elke leeftijd beleeft scouting op zijn eigen manier. Ontdek wat de groepen doen en wanneer ze samenkomen.',
-                f'<nav aria-label="Speltakken" class="jump-links">{ "".join(link(title, "#" + slug) for slug, title, *_ in GROUPS)}</nav>'
+                f'<nav aria-label="Speltakken" class="jump-links">{"".join(link(title, "#" + slug) for slug, title, *_ in GROUPS)}</nav>'
                 f'<div class="group-grid">{"".join(cards)}</div>'
                 f'<div class="actions">{link("Aanmelden voor plaatsing", MEMBERSHIP[2][1], "button dark")}{link("Contributie bekijken", "/lidmaatschap/#kosten", "button light")}</div>',
                 'Lidmaatschap')

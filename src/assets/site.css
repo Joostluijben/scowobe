@@ -67,7 +67,7 @@ address { font-style: normal; }
 .hero {
   min-height: 480px; display: grid; align-items: center; color: var(--white);
   background: linear-gradient(90deg, #102a20f5 1%, #102a20dc 36%, #102a2066 70%, #102a2029),
-    url("https://scowo.nl/wp-content/uploads/2026/10/img_header_06-1024x374.jpg") center / cover no-repeat, var(--forest);
+    url("/assets/scowo-boten.webp") center / cover no-repeat, var(--forest);
 }
 .hero-content { padding-block: clamp(3.5rem, 8vw, 7rem); }
 .eyebrow { font-size: .8rem; font-weight: 750; text-transform: uppercase; letter-spacing: .115em; color: var(--leaf); }
@@ -184,7 +184,7 @@ tbody th { font-weight: 550; }
   .hero {
     min-height: 0;
     background-image: linear-gradient(90deg, #102a20f5, #102a20a3),
-      url("https://scowo.nl/wp-content/uploads/2026/10/img_header_06-1024x374.jpg");
+      url("/assets/scowo-boten.webp");
   }
   .hero-content { padding-block: 3.5rem; }
   .hero h1 { font-size: clamp(3.1rem, 13vw, 4.7rem); }
