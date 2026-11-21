@@ -1,13 +1,22 @@
 {
-    "routes": [
-        {
-            "route": "/uitschrijven",
-            "rewrite": "/index.html"
-        },
-        {
-            "route": "/",
-            "redirect": "/uitschrijven",
-            "statusCode": 301
-        }
-    ]
+  "routes": [
+    {
+      "route": "/uitschrijven",
+      "rewrite": "/uitschrijven/index.html",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow",
+        "Referrer-Policy": "no-referrer"
+      }
+    },
+    {
+      "route": "/uitschrijven/*",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow",
+        "Referrer-Policy": "no-referrer"
+      }
+    }
+  ],
+  "responseOverrides": {
+    "404": { "rewrite": "/404.html" }
+  }
 }
